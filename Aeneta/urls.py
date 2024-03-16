@@ -8,6 +8,7 @@ urlpatterns = [
     path('', CustomLoginView.as_view(), name='login'),  # El path vacío redirige al login
     path('administracion/', include('administracion.urls', namespace='administracion')),  # Incluye las URLs con el namespace
     path('alumnos/', include('alumnos.urls', namespace='alumnos')),
-   
+    path('visitante/', include('visitante.urls', namespace='visitante')),
+   path('docente/', include('docente.urls', namespace='docente')),
     # ... cualquier otra ruta que necesites ...
 ]

@@ -11,7 +11,7 @@ class SignUpView(generic.CreateView):
     template_name = 'usuarios/signup.html'
 
 class CustomLoginView(LoginView):
-    template_name = 'usuarios/login.html'  # Especifica la ubicación del template
+    template_name = 'usuarios/login.html'  # Especifica la ubicación del template de login
 
     def get_success_url(self):
         # Lógica para redirigir a diferentes usuarios a diferentes páginas
@@ -19,5 +19,9 @@ class CustomLoginView(LoginView):
             return resolve_url('administracion:home')
         elif self.request.user.is_alumno:
             return resolve_url('alumnos:home')
+        elif self.request.user.is_docente:
+            return resolve_url('docente:home')
+        elif self.request.user.is_visitante:
+            return resolve_url('visitante:home')
         else:
-            return resolve_url('tu_url_por_defecto')
+            return resolve_url('url_por_defecto')

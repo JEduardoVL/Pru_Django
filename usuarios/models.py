@@ -5,3 +5,5 @@ from django.db import models
 class CustomUser(AbstractUser):
     is_administrador = models.BooleanField(default=False)
     is_alumno = models.BooleanField(default=False)
+    is_visitante = models.BooleanField(default=False)  
+    is_docente = models.BooleanField(default=False) 
