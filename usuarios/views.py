@@ -21,7 +21,7 @@ class CustomLoginView(LoginView):
             return resolve_url('alumnos:home')
         elif self.request.user.is_docente:
             return resolve_url('docente:home')
-        elif self.request.user.is_visitante:
-            return resolve_url('visitante:home')
+        #elif self.request.user.is_visitante:
+            #return resolve_url('visitante:home')
         else:
             return resolve_url('url_por_defecto')
