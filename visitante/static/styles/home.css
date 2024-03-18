@@ -15,7 +15,7 @@
 }
 
 #iniciar {
-  background-color: blue;
+  background-color: #156082;
   color: white;
   padding: 10px 20px;
   text-decoration: none; /* Elimina el subrayado de los enlaces */
@@ -26,7 +26,7 @@
 
 #iniciar:hover {
   background-color: white;
-  color: blue;
+  color: #156082;
 }
 
 .contenedor_principal {
@@ -42,6 +42,13 @@
   color: #156082;
   font-size: 35px;
   text-align: center;
+}
+
+.letra_preguntas{
+  font-family: monospace; 
+  color: #156082;
+  font-size: 30px;
+  padding: 30px;
 }
 
 .letra_texto {
@@ -125,6 +132,11 @@
   height: 3px; /* Establece la altura de la línea */
   background-color: #156082; /* Cambia el color de la línea */
 }
+.lineaDivisoria_2 {
+  height: 20px; /* Establece la altura de la línea */
+  background-color: #156082; /* Cambia el color de la línea */
+}
+
 
 footer {
   text-align: center;
