@@ -134,3 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Se configura para usar el modelo de usuario personalizado de la aplicación Usuarios
 AUTH_USER_MODEL = 'usuarios.CustomUser'
+
+# Se configura para que el usuario cierre sesion y sea redirigido al login
+LOGOUT_REDIRECT_URL = 'login'

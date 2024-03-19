@@ -9,6 +9,6 @@ urlpatterns = [
     path('administracion/', include('administracion.urls', namespace='administracion')),  # Incluye las URLs con el namespace
     path('alumnos/', include('alumnos.urls', namespace='alumnos')),
     path('visitante/', include(('visitante.urls', 'visitante'), namespace='visitante')),
-   path('docente/', include('docente.urls', namespace='docente')),
+    path('docente/', include('docente.urls', namespace='docente')),
     # ... cualquier otra ruta que necesites ...
 ]
